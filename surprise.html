@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise - ARK's First Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .surprise-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+        }
+
+        .surprise-container h1 {
+            font-size: 3rem;
+            margin: 1rem 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .surprise-container p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #fff;
+        }
+
+        .chudu-button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .chudu-button:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .celebration {
+            font-size: 3rem;
+            margin: 1rem 0;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .sparkles {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffd700;
+            border-radius: 50%;
+            animation: sparkle 1s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Surprise! 🎊</h1>
+        <p>A special moment from ARK</p>
+    </header>
+
+    <main class="surprise-container">
+        <div class="celebration">🎉🎊✨</div>
+        <h1>Look, its my first website!</h1>
+        <p>Welcome to the showcase of my HTML learning journey!</p>
+        <p style="font-size: 1rem; margin-top: 1.5rem;">This is just the beginning of an amazing web development adventure...</p>
+        
+        <a href="index.html" style="text-decoration: none;">
+            <button class="chudu-button">CHUDU 📊</button>
+        </a>
+        
+        <p style="margin-top: 2rem; font-size: 0.9rem;">(Click CHUDU to see the full dashboard)</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ARK's First Website. All rights reserved. ✨</p>
+    </footer>
+</body>
+</html>
