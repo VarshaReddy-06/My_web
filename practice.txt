@@ -1,0 +1,20 @@
+2 paras - 1 span 1 div (plaintext)
+table - 3 columns 4 rows (varsha1 varsha2 varsha3) - inline css
+varsha1 kinda varsha 3,4,5
+<hr>
+img1 - click to get image (Note,red color no underline) same Page
+<hr>
+click to get video (button) next page
+<hr>
+click to get audio (button) next page lo link - click to get audio(red, no geetha) - same page lo audio
+<hr>
+way to form(button) click chesthe next page , click to fill form (same page kinda untadi form) ---external css
+labelling use cheyandi
+input boxes
+radio buttons
+file <input type="text">
+checkboxes
+#about fruits
+
+In very next page, create a link in the end to go back to home page (website) - doubt
+Task completed button - Congratulations! You have completed the task.
