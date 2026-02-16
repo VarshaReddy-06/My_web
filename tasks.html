@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .task-item {
+            background-color: #f9f9f9;
+            border-left: 5px solid #3498db;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .task-item:nth-child(odd) {
+            border-left-color: #e74c3c;
+        }
+
+        .task-item:nth-child(even) {
+            border-left-color: #2ecc71;
+        }
+
+        .task-number {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .task-item:nth-child(odd) .task-number {
+            background-color: #e74c3c;
+        }
+
+        .task-item:nth-child(even) .task-number {
+            background-color: #2ecc71;
+        }
+
+        .task-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .task-description {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .difficulty.easy {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .difficulty.medium {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .difficulty.hard {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .task-hints {
+            background-color: #e7f3ff;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .task-hints h4 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        .task-hints ul {
+            padding-left: 1.5rem;
+        }
+
+        .task-hints li {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            margin-top: 2rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            width: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Learning Tasks</h1>
+        <p>Complete these 10 tasks to master HTML fundamentals</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/formatting.html">Formatting</a>
+        <a href="pages/link.html">Links</a>
+        <a href="pages/lists.html">Lists</a>
+        <a href="pages/table.html">Table</a>
+        <a href="pages/color.html">Colors</a>
+        <a href="pages/span-div.html">Span & Div</a>
+        <a href="pages/image.html">Images</a>
+        <a href="pages/audio.html">Audio</a>
+        <a href="pages/video.html">Video</a>
+        <a href="pages/form.html">Forms</a>
+        <a href="tasks.html">Tasks</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>10 HTML Challenges</h2>
+            <p>Test your knowledge with these practical HTML tasks. Each task covers different aspects of HTML development. Good luck! 💪</p>
+
+            <!-- Task 1 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">1</span>
+                    <span class="task-title">Create a Basic HTML Document</span>
+                </div>
+                <p class="task-description">
+                    Create a complete HTML document with proper DOCTYPE, html, head, and body tags. Include a title "My First Page" and a heading that says "Welcome to HTML".
+                </p>
+                <span class="difficulty easy">Easy</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Remember to use &lt;!DOCTYPE html&gt; at the very beginning</li>
+                        <li>Use &lt;meta&gt; tags for character set and viewport</li>
+                        <li>Use &lt;h1&gt; for the main heading</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">2</span>
+                    <span class="task-title">Create an Ordered and Unordered List</span>
+                </div>
+                <p class="task-description">
+                    Create an unordered list of your 5 favorite fruits and an ordered list of the steps to make a sandwich.
+                </p>
+                <span class="difficulty easy">Easy</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;ul&gt; for unordered lists</li>
+                        <li>Use &lt;ol&gt; for ordered lists</li>
+                        <li>Use &lt;li&gt; for list items</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">3</span>
+                    <span class="task-title">Format Text Using HTML Tags</span>
+                </div>
+                <p class="task-description">
+                    Write a paragraph that includes bold text, italic text, underlined text, and a deleted word. Use proper semantic and presentation tags.
+                </p>
+                <span class="difficulty easy">Easy</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;b&gt; or &lt;strong&gt; for bold</li>
+                        <li>Use &lt;i&gt; or &lt;em&gt; for italic</li>
+                        <li>Use &lt;u&gt; for underline</li>
+                        <li>Use &lt;del&gt; for deleted text</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 4 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">4</span>
+                    <span class="task-title">Create a Table with 3x3 Grid</span>
+                </div>
+                <p class="task-description">
+                    Create a table with 3 rows and 3 columns. Fill it with data about your favorite movies (title, year, genre) including a header row.
+                </p>
+                <span class="difficulty medium">Medium</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, and &lt;th&gt; tags</li>
+                        <li>Use &lt;thead&gt;, &lt;tbody&gt; for better structure</li>
+                        <li>Add borders using CSS border property</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 5 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">5</span>
+                    <span class="task-title">Embed an Image and Create an Image Link</span>
+                </div>
+                <p class="task-description">
+                    Add an image to your page using the img tag with proper alt text. Then, wrap another image in an anchor tag to make it clickable and link to an external website.
+                </p>
+                <span class="difficulty medium">Medium</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;img src=""&gt; with alt attribute</li>
+                        <li>Wrap img tag inside &lt;a&gt; tag for clickable images</li>
+                        <li>Use target="_blank" to open link in new tab</li>
+                        <li>Add width and height attributes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 6 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">6</span>
+                    <span class="task-title">Create a Navigation Menu with Multiple Links</span>
+                </div>
+                <p class="task-description">
+                    Create a navigation bar with at least 5 links to different pages (Home, About, Services, Contact, Blog). Use semantic HTML with &lt;nav&gt; tag.
+                </p>
+                <span class="difficulty medium">Medium</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;nav&gt; for navigation section</li>
+                        <li>Use &lt;ul&gt; with &lt;li&gt; for menu items</li>
+                        <li>Use &lt;a&gt; tags for links</li>
+                        <li>Style with CSS for better appearance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 7 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">7</span>
+                    <span class="task-title">Create an HTML Form with Various Input Types</span>
+                </div>
+                <p class="task-description">
+                    Build a contact form that includes text input, email input, password input, textarea, radio buttons, checkboxes, and a submit button.
+                </p>
+                <span class="difficulty medium">Medium</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;form&gt; tag to wrap all inputs</li>
+                        <li>Use &lt;label&gt; tag for form labels</li>
+                        <li>Use input types: text, email, password, radio, checkbox</li>
+                        <li>Use &lt;textarea&gt; for multi-line text</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 8 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">8</span>
+                    <span class="task-title">Use Semantic HTML Tags</span>
+                </div>
+                <p class="task-description">
+                    Create a page layout using semantic HTML5 tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt;. Structure a blog post page.
+                </p>
+                <span class="difficulty hard">Hard</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;header&gt; for page header</li>
+                        <li>Use &lt;main&gt; for main content</li>
+                        <li>Use &lt;article&gt; for blog posts</li>
+                        <li>Use &lt;footer&gt; for footer information</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 9 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">9</span>
+                    <span class="task-title">Embed Media Files (Audio and Video)</span>
+                </div>
+                <p class="task-description">
+                    Add both audio and video elements to your page. Include controls, autoplay, and loop attributes. Provide fallback text for browsers that don't support media.
+                </p>
+                <span class="difficulty hard">Hard</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Use &lt;audio&gt; and &lt;video&gt; tags</li>
+                        <li>Use &lt;source&gt; tag inside audio/video</li>
+                        <li>Add controls, autoplay, loop attributes</li>
+                        <li>Include fallback text for unsupported browsers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 10 -->
+            <div class="task-item">
+                <div>
+                    <span class="task-number">10</span>
+                    <span class="task-title">Create a Multi-Page Website with Linking</span>
+                </div>
+                <p class="task-description">
+                    Build a complete website with at least 4 pages (Home, About, Portfolio, Contact). Each page should have navigation that links to other pages, both internal links and external links to websites.
+                </p>
+                <span class="difficulty hard">Hard</span>
+                <div class="task-hints">
+                    <h4>💡 Hints:</h4>
+                    <ul>
+                        <li>Create separate HTML files for each page</li>
+                        <li>Use relative paths for internal links</li>
+                        <li>Use absolute URLs for external links</li>
+                        <li>Maintain consistent navigation across all pages</li>
+                        <li>Use target="_blank" for external links</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; padding: 1.5rem; background-color: #e7f3ff; border-radius: 8px;">
+                <h3>📊 Progress Tracker</h3>
+                <p>Complete these tasks to master HTML! Keep track of your progress as you work through each challenge.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%;">0%</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Learning Platform. <a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
